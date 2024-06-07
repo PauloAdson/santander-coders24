@@ -9,7 +9,96 @@
 
 <body>
     <main>
-        <form action="">
+        <h1>Formulário</h1>
+        <!-- Não é bom utilizar o method get caso tenha uma senha ou login no formulário -->
+        <form action="" method="get">
+            <div>
+                <label for="texto">Insira seu nome:</label>
+                <!-- value no input já informa um valor inicial -->
+                <input type="text" name="nome" id="texto" placeholder="Paulo">
+            </div>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <div>
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+
+            <div>
+                <label for="numero">Numéro:</label>
+                <input type="number" name="numero" id="numero">
+            </div>
+
+            <div>
+                <label for="file">Escolha um arquivo:</label>
+                <input type="file" name="file" id="file">
+            </div>
+
+            <div>
+                <label for="url">URL:</label>
+                <input type="url" name="url" id="url">
+            </div>
+
+            <div>
+                <label for="color">Cor:</label>
+                <input type="color" name="color" id="color">
+            </div>
+
+            <div>
+                <label for="range">Range:</label>
+                <input type="range" name="range" id="range" value="100" min="50" max="200">
+            </div>
+
+            <div>
+                <label for="checkbox">Checkbox:</label>
+                <!-- checked serve para ao abrir a página o checkbox já estar marcado -->
+                <input type="checkbox" name="checkbox" id="checkbox" checked>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </div>
+
+            <div>
+                <label for="radio">Radio:</label>
+                <!-- checked serve para ao abrir a página o radio já estar marcado -->
+                <input type="radio" name="radio" id="radio" checked>
+                <input type="radio" name="radio" id="radio">
+            </div>
+
+            <div>
+                <label for="reset">Reset:</label>
+                <!-- O value no reset, serve para indicar o nome que vai estar dentro do botão -->
+                <input type="reset" name="reset" id="reset" value="Limpar">
+            </div>
+            <div>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Sua Biografia"></textarea>
+            </div>
+            <div>
+                <!-- Select é utilizado juntamente do option -->
+                <select name="select" id="select">
+                    <!-- disabled desabilita a opção e o selected seleciona uma opção por padrão -->
+                    <option value="" selected disabled>Selecione uma das opções...</option>
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Despesa</option>
+                    <option value="tranferencia">Tranferência</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" id="submit" value="Enviar">
+            </div>
 
         </form>
     </main>
