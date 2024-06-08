@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Inria Sans", sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
 }
 
 .bg {
@@ -20,4 +27,27 @@ h1 {
     color: #252525;
     width: 100%;
     text-align: center;
+    font-size: 6.8rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+a {
+    font-size: 1.8rem;
+    padding-bottom: 48px;
+    color: blue;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color: #8a2be2;
+}
+
+a:active {
+    color: #410679;
 }
