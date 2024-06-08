@@ -104,3 +104,9 @@ img {
     width: 20rem;
     object-fit: cover;
 }
+
+.lista-de-contato h2{
+    background-color: lawngreen;
+    position: sticky;
+    top: 0;
+}
