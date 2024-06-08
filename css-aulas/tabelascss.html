@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tabelas CSS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Tabelas no CSS</h1>
+        <section id="students">
+            <h2>Tabela de Alunos</h2>
+            <!-- Table é onde vai ficar a tabela -->
+            <!-- tr (table row) cria uma linha na tabela  -->
+            <!-- th é utilizado dentro do thead (é uma coluna)-->
+            <!-- td é utilizado no tbody (cria uma nova coluna) -->
+            <table border="1">
+                <!-- Thead é o cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <!-- th é utilizado dentro do thead (é uma coluna)-->
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+
+                <!-- Tbody é o corpo da tabela -->
+                <tbody>
+                    <tr>
+                        <td>Carol Danvers</td>
+                        <td>carol.danvers@gmail.com</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>peter.parker@gmail.com</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tony Stark</td>
+                        <td>tony.stark@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="finance">
+            <h2>Tabela de Controle Financeiro</h2>
+
+            <table border="2">
+                <thead>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <!-- rowspan mescla as linhas -->
+                        <!-- colspan mescla as colunas -->
+                        <td rowspan="2">15/06/2022</td>
+                        <td>Despesa</td>
+                        <td>Almoço</td>
+                        <td>R$ 35,00</td>
+                    </tr>
+                    <tr>
+
+                        <!-- <td >15/06/2022</td> -->
+                        <td>Receita</td>
+                        <td>Salário</td>
+                        <td>R$ 3.768,00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="lista">
+
+            <h2>Lista de Compras</h2>
+            <ul>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Batata</li>
+                <li>Abóbora </li>
+                <li>Maçã</li>
+            </ul>
+
+            <h2>Ranking dos times de vôlei de praia</h2>
+            <ol>
+                <li>Bonde dos Caios</li>
+                <li>MM</li>
+                <li>Tigres Praianos</li>
+            </ol>
+        </section>
+
+        <div class="box"></div>
+        <img src="https://images.unsplash.com/photo-1717479472303-e09bc657578e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi earum atque nesciunt qui harum officiis vitae corrupti temporibus fugit ipsam non omnis dignissimos provident totam minus repudiandae odio, quaerat fuga libero nobis! Dolor tenetur ex nulla impedit. Totam quaerat illum voluptatibus unde non provident nihil cupiditate tempora, quos perspiciatis recusandae maxime fugiat ratione possimus at eaque est ab incidunt atque minus nobis dolore? Cum nemo beatae adipisci. Illum, tenetur aperiam dicta aspernatur quisquam labore omnis magni odit quis delectus, suscipit repellendus. Enim ipsam eveniet voluptatum quo molestias, recusandae quis officia blanditiis, amet aperiam commodi reiciendis vero aliquid distinctio minus. Rerum.</p>
+    </main>
+</body>
+
+</html>
