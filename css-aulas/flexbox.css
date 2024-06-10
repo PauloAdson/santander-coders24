@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inria Sans", sans-serif;
+    /* É bom usar o border-box para utilizar padding e não mudar o conteúdo */
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.boxes {
+    position: relative;
+
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* Através do flex-flow conseguimos "resumir um pouco do código utilizando 2 valores" */
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.box {
+    min-height: 10rem;
+    min-width: 20rem;
+    border: 10px solid red;
+    border-radius: 0.4rem;
+    background-color: blue;
+    color: #fff;
+    font-size: 4rem;
+    display: inline-block;
+}
